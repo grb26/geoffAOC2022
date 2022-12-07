@@ -37,7 +37,7 @@ for linebytes in inputFile.iter_lines():
 			towers.append([])
 		state = 1
 
-	# Ignore the labels and the blank line - step 2 does nothing
+	# Ignore the labels and the blank line - state 2 does nothing
 	if line == '' or re.search(r'^[ \d]+$', line):
 		state = 2
 
