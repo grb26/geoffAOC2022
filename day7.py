@@ -23,7 +23,7 @@ def getSize(ptr, inp, nom, sizes):
 
 		ptr += 1
 		if ptr >= len(inp):			# Reached EOF
-			break;
+			break
 		line = inp[ptr]
 
 		if line == '$ cd ..':		# Finished this directory, so pop up a level in the recursion
